@@ -1,0 +1,73 @@
+:root {
+  --main-bg: #000;
+  --color-text: #fff;
+  --carts-bg: #4360df;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-text);
+  background-color: var(--main-bg);
+}
+
+.slider-container {
+  position: relative;
+  margin-top: 85px;
+  padding: 120px 60px;
+}
+
+.slider-container h1 {
+  margin-bottom: 80px;
+}
+
+.gallery {
+  width: 1292px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.carousel-list {
+  position: relative;
+  width: 100%;
+  transition: margin-left 0.5s;
+}
+
+.cart {
+  display: block;
+  max-width: 350px;
+  margin: 0 auto;
+  height: 450px;
+  background-color: var(--carts-bg);
+  border-radius: 0.2em;
+  border: 1px solid #fff;
+}
+
+.slider-container .col:nth-child(1n + 3) .cart {
+  background-color: green;
+}
+
+.left,
+.right {
+  font-size: 64px;
+  position: absolute;
+  top: 50%;
+}
+
+.left {
+  left: 2rem;
+  transform: translateX(-20px);
+}
+
+.left a,
+.right a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.right {
+  right: 2rem;
+  transform: translateX(20px);
+}
